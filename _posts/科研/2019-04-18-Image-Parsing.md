@@ -35,11 +35,12 @@ Deeplab
 ![3](/public/img/posts/Image Parsing/deeplab_backbone.PNG)
 
 Deeplab v2 mIoU为 71.16
+
 Deeplab v3 mIoU为 76.03
+
 PSPNet mIoU为 77.08
+
 PSPNet GN mIoU为 76.11
-
-
 
 看我写的辛苦求打赏啊！！！有学术讨论和指点请加微信manutdzou,注明
 
