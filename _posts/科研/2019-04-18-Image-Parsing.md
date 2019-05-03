@@ -18,13 +18,20 @@ description:
 首先需要预训练backbone在Imagenet的分类，实验中发现如果train from scartch,将完全无法复现论文的结果而且结果差距会比较大。本文训练了基于不同版本的resnet101作为backbone。
 
 PSPNet backbone     在Imagenet的validation上single test: top1 72.64%, top5 91.16%
+
 Deeplab             在Imagenet的validation上single test: top1 69.38%, top5 88.92%(由于时间问题未充分训练)
+
 PSPNet-GN backbone  在Imagenet的validation上single test: top1 72.09%, top5 90.83%
 
 下面分别展示Imagenet上训练曲线
 
+PSPNet backbone
 ![1](/public/img/posts/Image Parsing/psp_backbone.PNG)
+
+PSPNet-GN backbone
 ![2](/public/img/posts/Image Parsing/psp_gn_backbone.PNG)
+
+Deeplab
 ![3](/public/img/posts/Image Parsing/deeplab_backbone.PNG)
 
 Deeplab v2 mIoU为 71.16
