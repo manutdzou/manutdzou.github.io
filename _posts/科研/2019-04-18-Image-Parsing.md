@@ -26,21 +26,24 @@ PSPNet-GN backbone  在Imagenet的validation上single test: top1 72.09%, top5 90
 下面分别展示Imagenet上训练曲线
 
 PSPNet backbone
+
 ![1](/public/img/posts/Image Parsing/psp_backbone.PNG)
 
 PSPNet-GN backbone
+
 ![2](/public/img/posts/Image Parsing/psp_gn_backbone.PNG)
 
 Deeplab
+
 ![3](/public/img/posts/Image Parsing/deeplab_backbone.PNG)
 
-Deeplab v2 mIoU为 71.16
+Deeplab v2 mIoU为 71.16 可见使用element-wise add方式聚合不同感受野尺度的特征混乱了多尺度的特征
 
 Deeplab v3 mIoU为 76.03
 
 PSPNet mIoU为 77.08
 
-PSPNet GN mIoU为 76.11
+PSPNet GN mIoU为 76.11 实验表明利用Group normalization在GPU显存受限时候能得到多卡Synchronous batch normalization接近的结果
 
 看我写的辛苦求打赏啊！！！有学术讨论和指点请加微信manutdzou,注明
 
