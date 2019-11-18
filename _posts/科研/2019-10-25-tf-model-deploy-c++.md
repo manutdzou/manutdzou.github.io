@@ -27,7 +27,7 @@ void CreateSession(const std::string &model_path)
 }
 ```
 
-正常inference时一般是先处理数据然后再输入模型,这是个串行的过程，时间是处理数据和模型推理相加。我们可以优化这个过程，并行化数据处理和模型推理。我们使用Produce-Consumer方式。我们首先建立一个线程安全的队列用于存储数据，起一个或多个线程来处理数据放入线程安全的队列中。然后另起一个或多个线程将队列中的数据取出喂给模型预测。
+正常inference时一般是先处理数据然后再输入模型,这是个串行的过程，时间是处理数据和模型推理相加。我们可以优化这个过程，并行化数据处理和模型推理。我们使用Provider-Consumer方式。我们首先建立一个线程安全的队列用于存储数据，起一个或多个线程来处理数据放入线程安全的队列中。然后另起一个或多个线程将队列中的数据取出喂给模型预测。
 
 线程安全的队列
 
@@ -106,7 +106,7 @@ std::vector<tensorflow::Tensor> outputs;
 TF_CHECK_OK(session->Run(inputs, { output_name }, {}, &outputs));
 ```
 
-至于Consumer和Provide函数涉及到项目不方便贴代码。
+至于Consumer和Provider函数涉及到项目不方便贴代码。
 
 只能说相比于使用python的tensorflow，C++下的部署实在快太多了，如果对于时间瓶颈在数据处理的任务，加上一些优化技巧提升5-10倍很容易。
 
