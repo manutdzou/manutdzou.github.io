@@ -28,3 +28,9 @@ description: 阶段总结
 ## In Lenovo AI Lab E-health Team
 
 ### [LITS Challenge Champion in MICCAI 2017](https://competitions.codalab.org/competitions/17094#results)
+
+![1](/public/img/posts/achievement/lits.jpg)
+
+### Multi object tracking benchmark 2016 leaderboard 1st all(2020/11/26)
+
+![2](/public/img/posts/achievement/mot2016_leaderboard.png)
