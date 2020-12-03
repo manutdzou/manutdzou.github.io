@@ -33,4 +33,4 @@ description: 阶段总结
 
 ### Multi object tracking benchmark 2016 leaderboard 1st all(2020/11/26)
 
-![2](/public/img/posts/achievement/mot2016_leaderboard.png)
+![2](/public/img/posts/achievement/mot2016_leaderboard.jpg)
