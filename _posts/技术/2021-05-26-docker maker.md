@@ -25,7 +25,7 @@ sudo docker run --runtime=nvidia -it --shm-size=1g --ulimit memlock=-1 --ulimit 
 docker exec -it CONTAINER ID /bin/bash
 ```
 
-## 安装opencv
+## 安装opencv编译依赖
 
 ```
 #cmake-3.19.2安装
@@ -65,7 +65,7 @@ make
 make install
 ```
 
-## opencv安装
+## opencv编译安装
 
 ```
 cd build
